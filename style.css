@@ -140,6 +140,10 @@ article {
   margin-bottom: 11rem
 }
 
+.mobile-media {
+  display: none;
+}
+
 
 .my-name {
   font-weight: 700;
@@ -149,12 +153,24 @@ article {
   color: #08FDD8;
 }
 
+
+
 .media-icon {
   display: grid;
-  gap: 2.5rem;
-  margin-top: 510px;
+  gap: 2rem;
+  margin-top: 449px;
   position: fixed;
 }
+
+.media-icon a {
+  color: #545458;
+}
+
+.media-icon a:hover {
+  color: #08FDD8;
+}
+
+
 
 main {
   margin: 2rem 2rem;
@@ -212,10 +228,6 @@ main {
    /* Compensate for excess margin on outer gallery flex items */
    margin: -1rem -1rem;
    padding-top: 15rem;
-}
-
-.media-icon a:hover {
-  color: #08FDD8;
 }
 
 
@@ -320,9 +332,29 @@ Remove or comment-out the code block below to see how the browser will fall-back
     padding-top: 9rem;
   }
 
+  .mobile-media {
+    display: block;
+  }
+
+  .fa-md {
+    color: #545458;
+    margin-bottom: 2rem;
+    margin-right: 0.9rem;
+  }
+
+  .fa-md:hover {
+    color: #08FDD8;
+  }
+
+  .header-flex {
+    display: none;
+  }
+
   .media-icon {
     margin-left: 4px;
     margin-top: 450px;
+    gap: 1.5rem;
+    width: 5px;
   }
 
   .email {
