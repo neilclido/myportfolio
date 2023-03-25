@@ -161,9 +161,9 @@ main {
   position: relative;
 }
 
-/* .container-contact {
-  margin-top: 2.7rem;
-} */
+.container-contact {
+  margin-top: 2.5rem;
+}
 
 .contact-me {
   text-decoration: none;
@@ -213,6 +213,11 @@ main {
    margin: -1rem -1rem;
    padding-top: 15rem;
 }
+
+.media-icon a:hover {
+  color: #08FDD8;
+}
+
 
 .gallery-item {
    /* Minimum width of 24rem and grow to fit available space */
@@ -325,6 +330,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     display: none;
   }
 
+
   .contact-me {
     font-size: 0.9rem;
   }
@@ -332,6 +338,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   .container-contact {
     margin: 1.5rem 0;
   }
+
 
   /* hamburger */
   .hamburger-menu {
