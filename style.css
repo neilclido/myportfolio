@@ -1,0 +1,449 @@
+/* font-family: 'Ubuntu', sans-serif;
+Light 300
+Regular 400
+Medium 500 
+font-family: 'Edu NSW ACT Foundation', cursive;
+Regular 400
+*/
+
+/* font-family: 'Montserrat', sans-serif;
+Montserrat
+Regular 400
+Medium 500
+SemiBold 600
+Bold 700 */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.email {
+color: #666874;
+text-decoration: none;
+transform: rotate(90deg);
+position: fixed;
+bottom: 110px;
+right: -2rem;
+margin-bottom: -1px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: #333646; */
+  background-color: #1D1D1D;
+  color: #666874;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+  width: 500px;
+}
+
+h1:hover {
+ color: #EBEBEC;
+}
+
+h2 {
+  font-size: 18rem;
+  position: absolute;
+  z-index: 998;
+  color: #EBEBEC;
+  opacity: 0.55;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #666874;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 19px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+span {
+  color: #EBEBEC;
+  /* color: #3a3a47; */
+}
+
+/* Navigation */
+.nc-logo {
+  max-width: 155px;
+  margin-left: 13px;
+}
+
+.nav-li {
+text-decoration: none;
+color: #666874;
+}
+
+.nav-li:hover {
+color: #08FDD8;
+}
+
+.nav {
+  text-decoration: none;
+  color: #666874;
+}
+
+nav {
+  /* background-color: #181818; */
+  display: flex;
+  align-items: center;
+  color: #EBEBEC;
+  padding: 2rem 0;
+  font-weight: 700;
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+  justify-content: space-between;
+}
+
+
+nav ul{
+  gap: 5rem;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  /* position: absolute; */
+  margin-right: 55px;
+}
+
+li a {
+  color: #EBEBEC;
+}
+
+
+/* top container */
+.header-flex {
+  display: flex;
+}
+
+article {
+  max-width: 1200px;
+  margin-bottom: 11rem
+}
+
+
+.my-name {
+  font-weight: 700;
+}
+
+.n {
+  color: #08FDD8;
+}
+
+.media-icon {
+  display: grid;
+  gap: 2.5rem;
+  margin-top: 510px;
+  position: fixed;
+}
+
+main {
+  margin: 2rem 2rem;
+  position: relative;
+}
+
+/* .container-contact {
+  margin-top: 2.7rem;
+} */
+
+.contact-me {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #EBEBEC;
+  border: 1px solid #08FDD8;
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+}
+
+.contact-me:hover {
+  color: #08FDD8;
+}
+
+.my-work {
+  padding: 5rem 0 1.5rem;
+  color: #EBEBEC;
+  font-weight: 300;
+  margin: auto;
+}
+
+
+.container {
+   max-width: 100rem;
+   margin: 0 auto;
+   padding: 3rem 0 2rem 2rem;
+}
+
+.heading {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 4rem;
+   font-weight: 500;
+   line-height: 1.5;
+   text-align: center;
+   padding: 3.5rem 0;
+   color: #666874;
+}
+
+.heading span {
+   display: block;
+}
+
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   /* Compensate for excess margin on outer gallery flex items */
+   margin: -1rem -1rem;
+   padding-top: 15rem;
+}
+
+.gallery-item {
+   /* Minimum width of 24rem and grow to fit available space */
+   flex: 1 0 24rem;
+   /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+   margin: 1rem;
+   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+   overflow: hidden;
+}
+
+.gallery-image {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+   transform: scale(1.15);
+}
+
+.hr-mid {
+margin: 55px;
+border-color: #666874;
+border-width: 1px;
+}
+
+.h2-about {
+color: #666874;
+/* font-size: 15rem; */
+opacity: 0.11;
+}
+
+.p-p {
+max-width: 700px;;
+letter-spacing: 2px;
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+   .gallery {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+       grid-gap: 2rem;
+   }
+
+   .gallery,
+   .gallery-item {
+       margin: 0;
+   }
+}
+
+
+
+/* mobile view */
+@media (max-width: 559px) {
+
+  /* .gallery-item {
+    width: 325px;
+  } */
+
+  .gallery .gallery-item {
+    width: 80%;
+  }
+
+
+  h1 {
+    max-width: 340px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 5.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  main {
+    margin: 0 0;
+  }
+
+  .container {
+    padding-top: 9rem;
+  }
+
+  .email {
+    font-size: 0.7rem;
+    display: none;
+  }
+
+  .contact-me {
+    font-size: 0.9rem;
+  }
+
+  .container-contact {
+    margin: 1.5rem 0;
+  }
+
+  /* hamburger */
+  .hamburger-menu {
+    position: relative;
+    z-index: 999;
+    background-color: transparent;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+  
+    width: 20%;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #0f1013;
+    opacity: 0.95;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #666874;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    color: #08FDD8;
+  }
+  /* end of hamburger */
+
+ 
+  .gallery {
+    padding-top: 4.5rem;
+  }
+  
+}
+
+
+
+/* tablet */
+@media (min-width: 560px) {
+
+  .hamburger-menu {
+    display: none;
+  }
+}

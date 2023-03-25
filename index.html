@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+   
+    <title>fort</title>
+
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+</head>
+
+
+
+<body>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Home</a></li>
+                <!-- <li><a class="menu__item" href="#"></a></li> -->
+                <li><a class="menu__item" href="#">About</a></li>
+                <li><a class="menu__item" href="#">Projects</a></li>
+                <li><a class="menu__item" href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    <nav>
+        <img class="nc-logo" src="image/NC LOGO (1).png" alt="">
+        <ul>
+            <li>
+                <a class="nav-li" href="#about">About</a>
+            </li>
+            <li>
+                <a class="nav-li"  href="#work">Projects</a>
+            </li>
+            <li>
+                <a class="nav-li"  href="mailto:neilclido@gmail.com">Contact</a>
+            </li>
+        </ul>
+        
+    </nav>
+
+    
+    <main>
+
+        <a href="mailto:neilclido@gmail.com" class="email"><i class="fa-sharp fa-solid fa-envelope fa-fade"></i>
+            neilclido@gmail.com</a>
+
+        <div class="header-flex">
+            <aside class="social-media" >
+                <div class="media-icon">
+                    <hr>
+                <i class="fa-brands fa-github fa-bounce fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-spin fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-beat fa-xl"></i>
+                <i class="fa-brands fa-square-twitter fa-shake fa-xl"></i>
+                </div> 
+
+            </aside>
+        </div>
+
+        
+        <div class="container">
+            
+            <article>
+                <p class="my-name">Hi, my name is<p>
+                <h1><span class="n">N</span>eil Clifford Dolores,</span></h1>
+                <h3>Front End</h3>
+                <h3>Web Developer </h3>
+                <!-- <p class="about">
+                    I am passionate about designing and coding intuitive and visually pleasing products that make people's lives easier
+                </p> -->
+                <div class="container-contact">
+                    <a href="mailto:neilclido@gmail.com" class="contact-me" >Contact Me!</a>
+                </div>
+                
+                
+                
+            </article>
+
+
+            <div id="work" class="work">
+                <h2>WORK</h2>
+            </div>
+            <!-- image-gallery -->
+           <div class="gallery">
+
+               <div class="gallery-item">
+                   <a href="https://neilclido.github.io/tindog/">
+                       <img class="gallery-image" src="image/tindog.png" alt="sunset behind San Francisco city skyline">
+                   </a>
+               </div>
+    
+               <div class="gallery-item">
+                   <a href="https://neilclido.github.io/NFT-preview-card-component/">
+                       <img class="gallery-image" src="image/nft-preview-card.jpg" alt="sunset behind San Francisco city skyline">
+                   </a>
+               </div>
+    
+               <div class="gallery-item">
+                   <a href="https://neilclido.github.io/Stats-preview-card-component/">
+                       <img class="gallery-image" src="image/stats-preview.jpg" alt="sunset behind San Francisco city skyline">
+                   </a>
+               </div>
+    
+               <div class="gallery-item">
+                   <a href="https://neilclido.github.io/Product-preview-card-component.github.io/">
+                       <img class="gallery-image" src="image/product-preview.jpg" alt="sunset behind San Francisco city skyline">
+                   </a>
+               </div>
+    
+           </div>
+
+           <hr class="hr-mid">
+
+           <div id="work" class="work">
+             <h2 class="h2-about">ABOUT</h2>
+           </div>
+           
+           <div class="gallery">
+
+              <div class="gallery-item">
+                 <!-- <img src="image/neil.jpg" class="my-photo" alt=""> -->
+                 <p class="p-p">With 5 years of experience in ecommerce, I have acquired valuable skills. Presently, I'm channeling my efforts towards web development, which I'm passionate about. I aspire to create visually-appealing and optimized websites that enhance sales and customer engagement. Although I'm currently learning Javascript, I have a strong desire to improve my skills and stay up-to-date with the latest industry trends. I always prioritize user experience and accessibility in all my web development projects, striving to design websites that meet my clients' specific needs and surpass their expectations.</p>
+              </div>
+
+            </div>
+
+           <!-- contact -->
+           <!-- <div id="container">
+            <form action="#" method="post" id="contact_form">
+              <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="My name is" name="name" id="name_input" required>
+              </div>
+              <div class="email-email">
+                <label for="email"></label>
+                <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+              </div>
+              <div class="telephone">
+                <label for="name"></label>
+                <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+              </div>
+              <div class="subject">
+                <label for="subject"></label>
+                <select placeholder="Subject line" name="subject" id="subject_input" required>
+                  <option disabled hidden selected>Subject line</option>
+                  <option>I'd like to start a project</option>
+                  <option>I'd like to ask a question</option>
+                  <option>I'd like to make a proposal</option>
+                </select>
+              </div>
+              <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Send Message" id="form_button" />
+              </div>
+            </form>
+          </div> --> 
+          <!-- --------end of contact container-------- -->
+           
+        </div>
+
+    
+    </main>
+     
+</body>
+</html>
