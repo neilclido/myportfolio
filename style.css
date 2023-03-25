@@ -315,6 +315,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
     padding-top: 9rem;
   }
 
+  .media-icon {
+    margin-left: 4px;
+    margin-top: 450px;
+  }
+
   .email {
     font-size: 0.7rem;
     display: none;
@@ -397,7 +402,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     top: 0;
     left: -100%;
   
-    width: 20%;
+    width: 25%;
     height: 100%;
   
     margin: 0;
